@@ -17,7 +17,6 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-import 'package:example/demo/audio_player_screen.dart';
 import 'package:example/demo/demo.dart';
 import 'package:flutter/material.dart';
 

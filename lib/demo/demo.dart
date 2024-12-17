@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:io';
-import 'dart:math';
 import 'dart:typed_data' show Uint8List;
 import 'package:example/demo/audio_widget.dart';
 import 'package:flutter/material.dart';
@@ -56,14 +55,12 @@ class _MyAppState extends State<Demo> {
   String? _path;
 
   StreamSubscription? _recorderSubscription;
-  StreamSubscription? _playerSubscription;
   StreamSubscription? _recordingDataSubscription;
 
   FlutterSoundPlayer playerModule = FlutterSoundPlayer();
   FlutterSoundRecorder recorderModule = FlutterSoundRecorder();
 
   String _recorderTxt = '00:00';
-  String _playerTxt = '00:00';
 
   double sliderCurrentPosition = 0.0;
   double maxDuration = 1.0;

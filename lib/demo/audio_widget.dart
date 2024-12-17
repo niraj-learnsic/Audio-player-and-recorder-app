@@ -165,8 +165,8 @@ class AudioPlayerWidgetState extends State<AudioPlayerWidget> {
                         size: 32,
                       ),
                     ),
-                    SizedBox(width: 6),
-                    Text(
+                    const SizedBox(width: 6),
+                    const Text(
                       "Error playing audio",
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
@@ -197,7 +197,7 @@ class AudioPlayerWidgetState extends State<AudioPlayerWidget> {
                           ? null
                           : togglePlayPause,
                     ),
-                    SizedBox(width: 6),
+                    const SizedBox(width: 6),
                     Expanded(
                       child: ProgressBar(
                         progress: _position.value,

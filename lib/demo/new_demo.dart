@@ -365,7 +365,7 @@ class _MyAppState extends State<NewDemo> {
           }
           sink = outputFile.openWrite();
         } else {
-          sink = null; // TODO
+          sink = null; 
         }
         recordingDataController = StreamController<Uint8List>();
         _recordingDataSubscription =
